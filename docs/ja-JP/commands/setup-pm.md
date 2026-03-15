@@ -32,7 +32,7 @@ node scripts/setup-package-manager.js --list
 3. **package.json**: `packageManager` フィールド
 4. **ロックファイル**: package-lock.json、yarn.lock、pnpm-lock.yaml、bun.lockbの存在
 5. **グローバル設定**: `~/.claude/package-manager.json`
-6. **フォールバック**: 最初に利用可能なパッケージマネージャー（pnpm > bun > yarn > npm）
+6. **フォールバック**: `npm`（デフォルト；子プロセスを生成しない）
 
 ## 設定ファイル
 

@@ -32,7 +32,7 @@ node scripts/setup-package-manager.js --list
 3. **package.json**：`packageManager` 字段
 4. **锁文件**：package-lock.json、yarn.lock、pnpm-lock.yaml 或 bun.lockb 的存在
 5. **全局配置**：`~/.claude/package-manager.json`
-6. **回退方案**：第一个可用的包管理器 (pnpm > bun > yarn > npm)
+6. **回退方案**：`npm`（默认值；不会产生子进程）
 
 ## 配置文件
 

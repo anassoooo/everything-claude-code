@@ -64,6 +64,31 @@
 
 在 2 分钟内快速上手：
 
+### 方案 0：npm / npx（最快 — 无需克隆）
+
+本地安装最快的方式。需要 [Node.js ≥ 18](https://nodejs.org/) 和 [Claude Code CLI v2.1+](https://docs.anthropic.com/en/docs/claude-code)。
+
+```bash
+# 全局安装一次，随处可用
+npm install -g ecc-universal
+ecc typescript       # 可替换为：python、golang、swift 或 php
+```
+
+一次性安装多个语言：
+
+```bash
+ecc typescript python golang
+```
+
+完成！代理、命令、技能、Hooks 和语言规则会自动安装到 `~/.claude/`，无需克隆仓库或手动复制文件。
+
+> **验证安装：**
+> ```bash
+> ecc list-installed
+> ```
+
+---
+
 ### 第一步：安装插件
 
 ```bash
@@ -120,7 +145,7 @@ cp -r everything-claude-code/rules/perl/* ~/.claude/rules/
 3. **package.json**: `packageManager` 字段
 4. **锁文件**: 从 package-lock.json、yarn.lock、pnpm-lock.yaml 或 bun.lockb 检测
 5. **全局配置**: `~/.claude/package-manager.json`
-6. **回退**: 第一个可用的包管理器
+6. **回退**: `npm`（默认值；不会产生子进程）
 
 要设置你首选的包管理器：
 
