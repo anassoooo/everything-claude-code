@@ -32,7 +32,7 @@ node scripts/setup-package-manager.js --list
 3. **package.json**：`packageManager` 欄位
 4. **Lock 檔案**：是否存在 package-lock.json、yarn.lock、pnpm-lock.yaml 或 bun.lockb
 5. **全域設定**：`~/.claude/package-manager.json`
-6. **備援**：第一個可用的套件管理器（pnpm > bun > yarn > npm）
+6. **備援**：`npm`（預設值；不會產生子程序）
 
 ## 設定檔
 

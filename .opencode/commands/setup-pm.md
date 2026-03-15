@@ -18,7 +18,7 @@ Set up package manager preference for the project or globally.
 3. **package.json**: `packageManager` field
 4. **Lock file**: Auto-detect from lock files
 5. **Global config**: `~/.claude/package-manager.json`
-6. **Fallback**: First available
+6. **Fallback**: `npm` (default; no child processes spawned)
 
 ## Configuration Options
 
