@@ -136,6 +136,32 @@ See the full changelog in [Releases](https://github.com/affaan-m/everything-clau
 
 Get up and running in under 2 minutes:
 
+### Option 0: npm / npx (Fastest — no clone needed)
+
+The quickest way to install locally. Requires [Node.js ≥ 18](https://nodejs.org/) and [Claude Code CLI v2.1+](https://docs.anthropic.com/en/docs/claude-code).
+
+```bash
+# Install globally once, then run from anywhere
+npm install -g ecc-universal
+ecc typescript       # replace with: python, golang, swift, or php
+```
+
+Pass multiple languages in one shot:
+
+```bash
+ecc typescript python golang
+```
+
+That's it — agents, commands, skills, hooks, and language rules land in `~/.claude/` automatically.
+No cloning, no copying files by hand.
+
+> **Verify the install:**
+> ```bash
+> ecc list-installed
+> ```
+
+---
+
 ### Step 1: Install the Plugin
 
 ```bash
